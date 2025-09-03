@@ -5,7 +5,7 @@ import os
 # It's best practice to load your API key from an environment variable
 # to keep it secure. Create an environment variable named 'GOOGLE_API_KEY'.
 try:
-    api_key = "AIzaSyBaKRyHxA6w47YGDJBTNH5VH-NeoGJ_ito"
+    api_key = "IzaSyBaKRyHxA6w47YGDJBTNH5VH-NeoGJ_ito" #A
     genai.configure(api_key=api_key)
 except KeyError:
     print("🚨 GOOGLE_API_KEY environment variable not set.")
@@ -86,4 +86,5 @@ if __name__ == "__main__":
     extracted_emails = parse_with_gemini(sample_dom_chunks, description_to_parse_2)
     print("\n--- Final Extracted Emails ---")
     print(extracted_emails)
+
     print("----------------------------")
